@@ -64,7 +64,7 @@ augmat
 a = gauss_elim(augmat.shape[0], augmat)
 
 X1, X2 = val[:,0], np.linspace(-10,10,23)
-Y1, Y2 = val[:,1], (a[0] + a[1]*X + a[2]*X**2)
+Y1, Y2 = val[:,1], (a[0] + a[1]*X2 + a[2]*X2**2)
 fig, ax = plt.subplots()
 ax.plot(X2, Y2, color="c", alpha=0.5, linestyle='--', label='Fitted line')
 ax.plot(X1, Y1, color="C1", marker='x', linestyle='none', label='Data')
