@@ -26,7 +26,7 @@ def gauss_elim(N,augmat): #where N gives height
 
 # %%
 #open csv data
-with open('data.csv', 'r') as f:
+with open("data.csv", 'r') as f:
     r = csv.reader(f)
     data = list(r)
 #create array containing values
