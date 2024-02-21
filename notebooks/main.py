@@ -1,3 +1,5 @@
+import csv
+import numpy as np
 #define function to read csv data into an array given a filename
 def opencsv(file):
     with open("".join( ["data/",file] ), 'r') as f:
